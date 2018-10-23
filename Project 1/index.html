@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel='stylesheet' type='text/css' href="css/styles.css">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Mauro | Home</title>
+  </head>
+  <body>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--start of physical webpage code-->
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-masthead navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Edith Mauro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Work</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <a class = "dropdown-item" href = "work.html">Work Home</a>
+                    <h6 class="dropdown-header">Project Types:</h6>
+                    <a class="dropdown-item" href="work.html#codeStuff">Code</a>
+                    <a class="dropdown-item" href="work.html#uxStuff">UX Design</a>
+                    <a class="dropdown-item" href="work.html#designStuff">Graphic Design</a>
+                    <a class="dropdown-item" href="work.html#researchStuff">Research</a>
+  
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+      <!-- Header with Top Image -->
+    <div id = "indexHeader" class = "headerInfo">
+      <div>
+        <img id = "headerImage" src = 'https://i2.wp.com/www.rogersauter.ch/wp-content/uploads/2015/09/header-image-one.jpg' alt = "header image">
+      </div>
+            
+      <header class="bg-light text-black">
+        <div class="container text-center">
+          <h1>Welcome</h1>
+          <p class="lead">This site includes a showcase of course, personal, and collaborative projects I've been involved in.  <br>Feel free to contact me with any questions or potential work opportunities.</p>
+        </div>
+      </header>
+    </div>
+
+<script>
+    //ADD UNDERLINE FOR H1 HEADERS ON CLICK - for decoration
+    $( document ).ready(function() {
+        $("#indexHeader h1").click(function() {
+            $(this).addClass("add_underline");
+        });
+    });
+  </script>
+
+
+    <!--Gallery of Thumbnails-->
+      <br>
+    <section>
+      <div id = "galImages" class="container">
+        <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-6 col-xs-6">
+                <div class = "d-lg-none"><p>UX Design</p></div> <!--Link to UX Page... - mobile view -->
+                <a href="work.html#uxStuff" class="d-block mb-4 d-lg-none">
+                  <img class="img-fluid img-thumbnail" src="images/DoubleScreen_Snapchat.png" alt="Snapchat Thumbnail">
+                </a>
+                <a class = "mb-4 d-none d-sm-none d-md-none d-lg-block">
+                    <img class="img-fluid img-thumbnail hover-shadow cursor"  src="images/DoubleScreen_Snapchat.png" alt="Snapchat Thumbnail" onclick="openModal();currentSlide(1)">
+                </a>
+              </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 d-none d-lg-block">
+            <a class="d-block mb-4">
+              <img class="img-fluid img-thumbnail hover-shadow cursor" src="images/GameOfThones.jpg" alt="Game of Thrones" onclick="openModal();currentSlide(2)">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 d-none d-lg-block">
+            <a class="d-block mb-4">
+              <img class="img-fluid img-thumbnail hover-shadow cursor"  src= "images/Magazine.jpg" alt="Magazine Cover" onclick="openModal();currentSlide(3)">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6">
+              <div class = "d-lg-none"><p>Research</p></div>
+              <a href="work.html#researchStuff" class="d-block mb-4 d-lg-none">
+                <img class="img-fluid img-thumbnail" src="images/MauroE_UgradPosterConference__CGT270.jpg" alt="Obesity Poster">
+              </a>
+              <a class = "mb-4 d-none d-sm-none d-md-none d-lg-block">
+                  <img class="img-fluid img-thumbnail hover-shadow cursor" src="images/MauroE_UgradPosterConference__CGT270.jpg" alt="Obesity Poster" onclick="openModal();currentSlide(4)">
+              </a>
+            </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-6">
+              <div class = "d-lg-none"><p>Coding</p> </div>
+            <a href="work.html#codeStuff" class="d-block mb-4 d-lg-none">
+              <img class="img-fluid img-thumbnail" src="images/she_not_here_main.jpg" alt="She's Not Here">
+            </a>
+            <a class = "mb-4 d-none d-sm-none d-md-none d-lg-block">
+              <img class="img-fluid img-thumbnail hover-shadow cursor" src="images/she_not_here_main.jpg" alt="She's Not Here" onclick="openModal();currentSlide(5)">
+          </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 d-none d-lg-block">
+            <a class="d-block mb-4">
+              <img class="img-fluid img-thumbnail hover-shadow cursor" src="images/Stumped.png" alt="Stumped" onclick="openModal();currentSlide(6)">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6">
+            <div class = "d-lg-none"><p>Graphic Design</p></div>
+            <a href="work.html#designStuff" class="d-block mb-4 d-lg-none">
+              <img class="img-fluid img-thumbnail" src="images/Thumbnail.png" alt="Thumbnail Design">
+            </a>
+            <a class = "mb-4 d-none d-sm-none d-md-none d-lg-block">
+                <img class="img-fluid img-thumbnail hover-shadow cursor" src="images/Thumbnail.png" alt="Thumbnail Design" onclick="openModal();currentSlide(7)">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 d-none d-lg-block">
+            <a class="d-block mb-4">
+              <img class="img-fluid img-thumbnail hover-shadow cursor" src="images/VisPun.jpg" alt="Visual Pun" onclick="openModal();currentSlide(8)">
+            </a>
+          </div>
+      </div>
+    </section>
+      <hr class = "d-none d-sm-none d-md-none d-lg-block">
+      <br>
+
+<!--Code for the lightbox-->
+<div id="LightBox" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="images/DoubleScreen_Snapchat.png" alt = "Snapchat Update">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/GameOfThones.jpg" alt = "Game of Thrones Infographic">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/Magazine.jpg" alt = "Magazine Cover">
+    </div>
+    
+    <div class="mySlides">
+      <img src="images/MauroE_UgradPosterConference__CGT270.jpg" alt = "Research Poster">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/she_not_here_main.jpg" alt = "She's Not Here Video Game">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/Stumped.png" alt = "Stumped Program">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/Thumbnail.png" alt = "Thumbnail Image">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/VisPun.jpg" alt = "Visual Pun">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div>
+</div>
+      
+      <!--Block Quote-->
+    <section>
+      <div id = "blockQuote" class="container">
+          <div class="row">
+              <div class="blockquote col-md-6 col-xs-12">
+                  <p>I have a passion for learning new skills, and hope to gain valuable experience in the technology field. I am actively seeking a Summer 2019 Internship based in UX Design, Front-End development, Graphic Design, or Data Science.
+                    </p>
+                  </blockquote>
+              </div>
+              <div class = "col-md-6 col-xs-12">
+              <img src="images/matthew-henry-15558-unsplash.jpg" alt = "blockquote picture">
+              </div>
+          </div>
+      </div>
+    </section>
+ 
+<hr>
+
+<div class = "BTMbutton text-center">
+  <a class = "btn btn-sm btn-dark" href = "about.html" role = "button">Learn More About Me</a>
+</div>
+
+<hr>
+
+      <!-- Footer -->
+      <footer class="py-4 bg-light">
+        <div class="container-fluid">
+          <p class="m-0 text-center text-black">Edith Mauro | emauro@purdue.edu</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+
+  </body>
+</html>

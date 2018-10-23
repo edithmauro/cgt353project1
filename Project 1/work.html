@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel='stylesheet' type='text/css' href="css/styles.css">
+    <script type="text/javascript" src="/scripts/scripts.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Mauro | Work</title>
+
+  </head>
+  <body>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--start of physical webpage code-->
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-masthead navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Edith Mauro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Work</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <a class = "dropdown-item" href = "work.html">Work Home</a>
+                    <h6 class="dropdown-header">Project Types:</h6>
+                    <a class="dropdown-item" href="work.html#codeStuff">Code</a>
+                    <a class="dropdown-item" href="work.html#uxStuff">UX Design</a>
+                    <a class="dropdown-item" href="work.html#designStuff">Graphic Design</a>
+                    <a class="dropdown-item" href="work.html#researchStuff">Research</a>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+<div id = "WORKpage">
+        <div id = "workHeader" class = "headerInfo"> 
+                <header class="bg-light text-black">
+                  <div class="container text-center">
+                    <h1>Portfolio of Work</h1> <!--Same Font as Home to Show Emphasis-->
+                    <hr>
+                  </div>
+                </header>
+              </div>
+  
+
+<div id = "SlideShow" class="slideshow-container-fluid"> <!--Header slideshow with bottom link button-->
+
+  <!--Header Images: created on canva.com - free stock photos from that website -->
+
+    <div class="mySlides">
+      <img src="images/codeHead-1.jpg" alt = "Code Header Image">
+      <a class="btn btn-sm" href="work.html#codeStuff">Click to See Code Projects</a>
+    </div>
+    
+    <div class="mySlides">
+      <img src="images/uxHead-1.jpg" alt = "UX Header Image">
+      <a class="btn btn-sm" href="work.html#uxStuff">Click to See UX Design Projects</a>
+    </div>
+    
+    <div class="mySlides ">
+      <img src="images/designHead-1.jpg" alt = "Design Header Image">
+      <a class="btn btn-sm" href="work.html#designStuff">Click to See Graphic Design Projects</a>
+    </div>
+    
+    <div class="mySlides">
+        <img src="images/researchHead-1.jpg" alt = "Research Header Image">
+        <a class="btn btn-sm" href="work.html#researchStuff">Click to See Research Project</a>
+      </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+
+    <script> //WORK HEADER SLIDER - Carousel
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+<!--CODE-->
+<div id = workINFORMATION>
+<div id = "codeStuff">
+  <br>
+  <div class = "itemHeader"> <!--headers of each project category-->
+        <header>
+          <div class="container text-center">
+            <h1>Coding Projects</h1>
+          </div>
+          <div class = "container col-md-8 col-xs-12 text-center headerTwo">
+                <h2 class = "SmallerHeaderTwo"> HTML | PHP | CSS | JavaScript | Processing.js | C++
+                  </h2>
+            </div>
+        </header>
+      </div>
+
+          <br>
+
+<div class="container colorEven">
+
+        <!-- She's Not Here -->
+        <div id = "shesNotHere" class="row workRow">
+          <div class="col-md-6">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/ShesNotHere.png" alt="she's not here">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>She's Not Here</h3>
+            <h4>GWC Final Project</h4>
+            <p>She's Not Here is an original 2D video game created during the Girls Who Code Summer Immersion Program.</p>
+            <p>It was developed using a combination of HTML, CSS, JavaScript, and Crafty.js.</p>
+            <a class="btn btn-dark" href="https://github.com/edithmauro/ShesNotHere" target="_blank">Github</a>
+          </div>
+        </div>
+  
+        <hr>
+  
+        <!-- Growing Tree -->
+        <div id = "stumped" class="row">
+          <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/Stumped.png" alt="growing tree">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Growing Tree</h3>
+            <h4>CGT 215 Course Project</h4>
+            <p>Stumped is a three dimensional tree animation that 'grows' radomized branches.</p>
+            <p>It was created using C++ and the OpenGL library</p>
+            <a class="btn btn-dark" href="https://github.com/edithmauro/GrowingTree" target="_blank">Github</a>
+          </div>
+        </div>
+  
+        <hr>
+  
+        <!-- Original Thumbnail -->
+        <div id = "blueThumb" class="row">
+          <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/Thumbnail.png" alt="Thumbnail Project">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Original Thumbnail Project</h3>
+            <h4>CGT 118 Course Assignment</h4>
+            <p>Original thumbnail design that was created using Processing.js.  This was a creative course project to learn how to use Processing from a graphic design perspective.</p>
+            <a class="btn btn-dark" href="https://github.com/edithmauro/Thumb_Yellow" target="_blank">Github</a>
+          </div>
+        </div>
+
+        <br>
+</div>
+</div>
+  
+
+<!--USER EXPERIENCE-->
+  <div id = "uxStuff">
+    <br>
+  <br>
+        <div class = "itemHeader">
+            <header>
+              <div class="container text-center">
+                <h1>User Experience Projects</h1>
+              </div>
+              <div class = "container col-md-8 col-xs-12 text-center headerTwo">
+                  <h2 class = "SmallerHeaderTwo">User Research | User Analysis | Design Requirements | Conceptual Design | Evaluation
+                  </h2>
+              </div>
+            </header>
+          </div>
+
+          <br>
+<div class="container colorOdd"> 
+        <!-- Snapchat Update -->
+        <div id = "snapchat" class="row workRow">
+          <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/SingleScreen_Snapchat.png" alt="snapchat">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Snapchat Update</h3>
+            <h4>CGT 256 Course Project</h4>
+            <p>NOTE: I have no affiliation with the Snapchat Company.  This was a course project.</p>
+            <p>The focus of this assignment was to take an app, website, etc. and work on making it more user-friendly.  I chose to work on improving Snapchat Version 10.29.0.33, due to the incredible amount of backlash that this update recieved.  In addition to changing the layout of the app, my team and I came up with new features that we would like to see implemented.</p>
+            <p>The mockup was created using Canva.com and the final screens were created using Adobe Illustrator.  I created every screen except the settings screens for the final demo.</p>
+            <a class="btn btn-dark" href="https://drive.google.com/file/d/1wzP0tC423gWukvaURlXJGjply_FpU1wd/view?usp=sharing" target="_blank">Presentation</a>
+            <a class="btn btn-dark" href="https://drive.google.com/file/d/1_wilwVwgM6nI-kXd01pyL8QtpZ2H3P-G/view?usp=sharing" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+  
+        <hr>
+  
+        <!-- Lyft Rating Update -->
+        <div class="row workRow" id = "lyft" >
+          <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/lyft_drawing.png" alt="lyft">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Lyft Rating System Update</h3>
+            <h4>CGT 256 Course Project</h4>
+            <p>NOTE: I have no affiliation with Lyft.  This was a course project.</p>
+            <p>This assignment focussed on updating the current version (Feb 2018) of the Lyft app's rating system to include functions that would encourage more users to rate their driver.</p>
+            <a class="btn btn-dark" href="https://drive.google.com/file/d/1PSgWrThnxQ4sCbgJIFe3f-RtvVV0zKY8/view?usp=sharing" target="_blank">Presentation</a>
+            <a class="btn btn-dark" href="https://drive.google.com/file/d/17-tc29nhzefdIMJV0QsnkuvVYr9SfG14/view?usp=sharing" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+  
+        <hr>
+
+        <!-- Honey Suckle No More -->
+        <div id = "honeySuckle" class="row workRow">
+          <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="images/InvasivePlants.jpg" alt="Honey Suckle">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Honeysuckle No More</h3>
+            <h4>TECH 120 Course Project</h4>
+            <p>The purpose of this assignment was to find any specific problem that is related to West Lafayette, and create a product that would resolve it.</p>  <p>My group chose to focus on reducing the invasive plant species, Japanese Honey Suckle.  This plant is found in many areas on Purdue's campus, and has done much damage to the local wildlife (according to local experts).  This species is not only fast-growing, but it is also very hard to contain and destroy without harming the surrounding local flora.</p>
+            <p>Our solution includes creating a durable, multi-layer plant barrier that both kills the invasive spieces, and allows new plants to grow in order to restore the plant life in that area. </p>
+            <a class="btn btn-dark" href="https://drive.google.com/file/d/1_J2z_uK7C2uYcaWDKHdeOgi-_P2yTh-E/view?usp=sharing" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+  
+  </div>
+</div>
+
+  <!--GRAPHIC DESIGN-->
+<div id = "designStuff">
+    <br>
+    <br>
+  <div class = "itemHeader">
+        <header>
+          <div class="container text-center">
+            <h1>Graphic Design Projects</h1>
+          </div>
+          <div class = "container col-md-8 col-xs-12 text-center headerTwo">
+              <h2 class = "SmallerHeaderTwo">Illustrator | Photoshop | InDesign
+                </h2>
+          </div>
+        </header>
+      </div>
+
+      <br>
+<div class="container colorEven"> 
+    <!-- Game of Thrones -->
+    <div id = "GOT" class="row workRow">
+      <div class="col-md-6 col-sm-12">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="images/GameOfThones.jpg" alt="GOT">
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h3>Deaths on Game of Thrones - Infographic</h3>
+        <h4>CGT 270 Creative Project</h4>
+        <p>This is a course project made to show how data can be presented in a more visual way.  This Infographic is centered around death statistics on the TV show "Game of Thrones."</p>
+        <p>The icons were created using Adobe Illustrator.</p>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <!-- Insecurity Deposits -->
+    <div id = "inDepo" class="row workRow">
+        <div class="col-md-6 col-sm-12">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/InsecureDepo.png" alt="Insecurity Deposit">
+        </div>
+      <div class="col-md-6 col-sm-12">
+        <h3>Insecurity Deposits</h3>
+        <h4>NYC Comproller's Office Web Internship</h4>
+        <p>I formatted a Housing Policy Report in accordance with the NYC Comptroller's standards under a very short deadline. </p>
+          <p>I created call-outs that correspond to stories creating empathy using Adobe Illustrator, and edited all visual elements (charts, graphs, captions, etc.) where needed in Microsoft Word.</p>
+          <p>I am also featured in the Acknowledgements.</p>
+          <a class="btn btn-dark" href="https://comptroller.nyc.gov/reports/insecurity-deposits-a-plan-to-reduce-high-entry-costs-for-nyc-tenants/" target="_blank">Link to Report</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Subway -->
+    <div id = "subway" class="row workRow">
+      <div class="col-md-6 col-sm-12">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="images/VisPun.jpg" alt="visual pun">
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h3>"Subway" Visual Pun</h3>
+        <h4>CGT 118 Course Project</h4>
+        <p>This is a creative project meant to showcase a 'visual pun.' The pun I came up with shows a subway sandwich found in the New York subway system: "Subway Sandwich."</p>
+        <p>This was created using Adobe Photoshop.</p>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <!-- Scholar Magazine -->
+    <div id = "magazine" class="row workRow">
+      <div class="col-md-6 col-sm-12">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="images/Magazine.jpg" alt="Honey Suckle">
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h3>Scholar Magazine</h3>
+        <h4>ENGL 106 Final Project</h4>
+        <p>The purpose of this project was to create an original Magazine design for research papers written about the novel, "Native Son" by Richard Wright.</p>
+        <p>This was created using a combination of Adobe InDesign for the magazine structure, and Adobe Illustrator for the cover page.</p>
+        <a class="btn btn-dark" href="https://docs.wixstatic.com/ugd/e7493f_04e0a6204d9b41f694bfe5bb3def5a75.pdf" target="_blank">My Contribution</a>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+<!--RESEARCH PROJECT-->
+<div id = "researchStuff">
+  <br><br>
+<div class = "itemHeader">
+        <header>
+          <div class="container text-center">
+            <h1>Research Project</h1>
+          </div>
+          <div class = "container col-md-8 col-xs-12 text-center headerTwo">
+            <h2 class = "SmallerHeaderTwo">Research | Collecting Data | Creating Visualizations | Analysis
+                </h2>
+          </div>
+        </header>
+        
+      </div>
+
+      <br>
+<div class="container colorOdd"> 
+    <!-- Obesity Project -->
+    <div id = "obesity" class="row workRow">
+      <div class="col-md-6 col-sm-12">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="images/MauroE_UgradPosterConference__CGT270.jpg" alt="Obesity Project">
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h3>"Food Deserts and Their Effect on the Rate of Obesity"</h3>
+        <h4>Published Research</h4>
+        <p>This is a semester-long original research project that is centered around the question, "Does living in a food desert have an effect on the average rate of obesity?"  Using data based in Indiana, I was able to conclude that there is, very surprisingly, no correlation between these two variables.</p>
+        <p>This research was both published in the Journal of Purdue Undergraduate Research Vol. 8, and featured in the Purdue Undergraduate Poster Conference.</p>
+        <a class="btn btn-dark" href="https://drive.google.com/file/d/1Hxgi0U5xOO1s5lOcpPUn-PEJc4k8Usz8/view?usp=sharing" target="_blank">Final Report</a>
+        <a class="btn btn-dark" href="https://drive.google.com/file/d/1lXCnd-oarg466k82gUc6DvpIeRKOQwUr/view?usp=sharing" target="_blank">PURC Poster</a>
+        <a class="btn btn-dark" href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1332&context=jpur" target="_blank">JPUR Snapshot</a>
+      </div>
+    </div>
+ </div> 
+</div>
+
+<br>
+
+</div>
+
+</div>
+
+      <!-- Footer -->
+      <footer class="py-4 bg-light">
+        <div class="container">
+          <p class="m-0 text-center text-black">Edith Mauro | emauro@purdue.edu</p>
+        </div>
+      </footer>
+
+  </body>
+</html>

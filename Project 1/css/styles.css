@@ -1,0 +1,361 @@
+*, *::after, *::before { box-sizing:border-box; }
+
+.BTMbutton a {
+    background-color: #003366;
+    color: #e6ebf0;
+}
+
+#SubmitButton input{
+    background-color: #750D37;
+    color: #fff;
+}
+
+nav .dropdown-menu a{
+    font-size: 14px;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.add_underline{
+  text-decoration: underline;
+}
+
+.change-border-color{
+  border-color: lightblue;
+  border: 2px;
+}
+
+nav .dropdown-header{
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration: bold;
+    color: #000;
+}
+
+
+.singleFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    font-size: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 100%;
+}
+
+#indexHeader header {
+    padding: 30px 0 30px;
+    color: #750D37;
+  }
+  
+#workHeader header{
+    padding: 75px 0 10px;
+}
+
+
+.headerInfo header h1{
+      font-size: 60px;
+      color: #750D37;  
+
+    }
+      
+
+  #headerImage{
+      height: 10%;
+      width: 100%;
+  }
+
+  #blockQuote{
+    padding: 2%;
+}
+
+.blockquote{
+    text-align: center;
+    border-style: solid;
+    border-color: #ddd;
+    display: block;
+    padding: 5%;
+}
+
+#blockQuote p{
+    font-size: 16pt;
+}
+
+#blockQuote img{
+    width:100%;
+    height:100%;
+}
+
+@media (max-width: 770px) {
+    #blockQuote p{
+        font-size: 13pt;
+    }
+}
+
+#galImages{
+    overflow: hidden;
+}
+
+#galImages p{
+    font-size: 30px;
+    background-color: #ac6e87;
+    color: #FFF;
+}
+
+#galImages img{
+    overflow: hidden;
+    width: 237px;
+    height: 237px;
+}
+
+.changeCOLOR{
+  background-color: #003366;
+}
+
+
+.headerFORALL{
+    background-color: #ddd;
+    color: #750D37;
+}
+
+.colorEven{
+    background-color: #fcf9f8;
+}
+
+.colorOdd{
+    background-color: #f8f2f1;
+}
+
+  .headerFORALL header{
+    font-size: 60px;
+    padding: 75px 0px 10px;
+  }
+
+  .itemHeader header{
+    background-color: #874d65;
+    padding: 20px 0px
+  }
+
+  .itemHeader h1{
+    font-size: 45px;
+    color: #fff;
+  }
+  
+
+/* This is for secondary headers of all h2 except on the home page*/
+  .headerTwo{
+      margin-top: 20px;
+  }
+
+.SmallerHeaderTwo{
+    font-size: 13pt;
+        color: #eee2e7;
+}
+
+  h3{
+      text-decoration: underline;
+      text-transform: uppercase;
+  }
+
+
+  .workRow{
+      padding: 15px 10px
+  }
+
+
+/*IMAGE GALLERY - lightbox*/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    height:100%;
+    overflow:scroll;
+  }
+  
+  .close {
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img{
+      width: 100%;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #ac6e87;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #ddd;
+  }
+  
+ #galImages img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/*END oF Light box*/
+
+
+
+  /*WORK PAGE SLIDER*/
+  #WORKpage .mySlides {display: none}
+  #WORKpage img {vertical-align: middle;}
+  
+  /* Slideshow */
+ #WORKpage .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons for slideshow */
+  #WORKpage .prev, #WORKpage .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color:#000;
+  }
+  
+  /* Right Next Button */
+  #WORKpage .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  #WORKpage .prev:hover, #WORKpage .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* dots */
+  #WORKpage .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  #WORKpage .active, #WORKpage .dot:hover {
+    background-color: #717171;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    #WORKpage .prev, #WORKpage .next, #WORKpage .text {font-size: 11px}
+  }
+
+  #SlideShow .mySlides a{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #750D37;
+    color:#ddd;
+    }
+  
